@@ -148,7 +148,7 @@ public:
     }
 
     void AddTicks(std::uint64_t ticks) override {
-        CoreTiming::AddTicks(ticks);
+        CoreTiming::AddTicks(16000);
     }
     std::uint64_t GetTicksRemaining() override {
         s64 ticks = CoreTiming::GetDowncount();
